@@ -1,8 +1,12 @@
-function Todo() {
+function Todo({text}) {
+
+  function handleDelete() {
+    
+  }
   return (
     <div>
-      <h2>Title</h2>
-      <button>Delete</button>
+      <h2>{text}</h2>
+      <button onClick={() => handleDelete()} >Delete</button>
     </div>
   );
 }
