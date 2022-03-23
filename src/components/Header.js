@@ -6,11 +6,14 @@ function Header() {
       <div>React Meetups</div>
       <nav>
         <ul>
-          <li>
-            <Link>Favourites</Link>
+        <li>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link>New Meetup</Link>
+            <Link to="/favourites">Favourites</Link>
+          </li>
+          <li>
+            <Link to="/newmeetup">New Meetup</Link>
           </li>
         </ul>
       </nav>
