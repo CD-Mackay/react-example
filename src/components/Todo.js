@@ -22,7 +22,7 @@ function Todo({text}) {
         <button onClick={() => handleDelete()} >Delete</button>
       </div>
       {showModal && <Backdrop onCancel={closeModal}/>}
-      {showModal && <Modal />}
+      {showModal && <Modal onCancel={closeModal} onConfirm={closeModal} />}
     </div>
   );
 }
