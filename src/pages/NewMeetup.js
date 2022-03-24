@@ -1,6 +1,10 @@
 import NewMeetupForm from "../components/meetups/NewMeetupForm";
+import { useHistory } from 'react-router-dom';
 
 function NewMeetups() {
+
+  const history = useHistory();
+
   function addMeetupHandler(data) {
     fetch("https://nextreactlesson-default-rtdb.firebaseio.com/meetups.json", {
       method: "POST",
@@ -8,7 +12,9 @@ function NewMeetups() {
       headers: {
         "Content-type": "application/json",
       },
-    });
+    }).then(() => {
+      history.replace('/');
+    })
   }
   return (
     <section>
