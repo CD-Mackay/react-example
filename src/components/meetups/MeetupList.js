@@ -7,6 +7,7 @@ function MeetupList(props) {
     return array.map((element) => {
       return (
         <MeetupItem
+          id={element.id}
           key={element.id}
           image={element.image}
           title={element.title}

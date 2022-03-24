@@ -1,7 +1,7 @@
 import { hasSelectionSupport } from '@testing-library/user-event/dist/utils';
 import { createContext, useState } from 'react';
 
-const FavouritesContext = createContext({
+export const FavouritesContext = createContext({
   favourites: [],
   totalFavourites: 0,
   addFavourite: (favouriteMeetup) => {},
@@ -42,5 +42,4 @@ export function FavouritesContextProvider(props) {
   </FavouritesContext.Provider>
 };
 
-export default FavouritesContext;
 
