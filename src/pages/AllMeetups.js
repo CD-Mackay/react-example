@@ -29,22 +29,22 @@ function AllMeetups() {
   useEffect(() => {
     setLoading(true);
     fetch("https://nextreactlesson-default-rtdb.firebaseio.com/meetups.json")
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      const meetups = [];
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        const meetups = [];
 
-      for (const key in data) {
-        const meetup = {
-          id: key,
-          ...data[key]
+        for (const key in data) {
+          const meetup = {
+            id: key,
+            ...data[key],
+          };
+          meetups.push(meetup);
         }
-        meetups.push(meetup)
-      }
-      setLoading(false);
-      setMeetups(meetups);
-    });
+        setLoading(false);
+        setMeetups(meetups);
+      });
   }, []);
 
   if (loading) {
