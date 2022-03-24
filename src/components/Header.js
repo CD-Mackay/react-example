@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 
+import './Header.css';
+
 function Header() {
   return (
-    <header>
-      <div>React Meetups</div>
+    <header className="header">
+      <div className="logo">React Meetups</div>
       <nav>
         <ul>
         <li>
