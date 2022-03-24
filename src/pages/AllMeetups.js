@@ -23,12 +23,6 @@ const DUMMY_DATA = [
 
 function AllMeetups() {
 
-  // function displayMeets(array) {
-  //   return array.map((element) => {
-  //     return <li key={element.id}>{element.title}</li>
-  //   })
-  // };
-
   return (
     <section>
       <h1>All Meetups</h1>
