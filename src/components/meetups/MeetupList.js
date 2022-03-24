@@ -2,6 +2,7 @@ import classes from "./MeetupList.module.css";
 import MeetupItem from "./MeetupItem";
 
 function MeetupList(props) {
+  console.log(props.meetups);
   function displayMeetups(array) {
     return array.map((element) => {
       return (
