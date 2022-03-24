@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-import './Header.css';
+import classes from './Header.module.css';
 
 function Header() {
   return (
-    <header className="header">
-      <div className="logo">React Meetups</div>
+    <header className={classes.header}>
+      <div className={classes.logo}>React Meetups</div>
       <nav>
         <ul>
         <li>

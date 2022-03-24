@@ -23,7 +23,7 @@ function AllMeetups() {
 
   function displayMeets(array) {
     return array.map((element) => {
-      return <li>{element.title}</li>
+      return <li key={element.id}>{element.title}</li>
     })
   };
 
